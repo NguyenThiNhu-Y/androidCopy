@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cooking</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_yeu_thich">Yêu thích</string>
+    <string name="title_thong_bao">Thông báo</string>
+    <string name="title_tai_khoan">Tài khoản</string>
+    <string name="user">Tên đăng nhập</string>
+
+    <string name="pasword">Mật khẩu</string>
+    <string name="repeatPass">Nhập lại mật khẩu</string>
+    <string name="lastname">Họ</string>
+    <string name="firstname">Tên</string>
+    <string name="doB">Ngày sinh</string>
+    <string name="sdt">Số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="rule">Bằng việc đăng ký, tôi đồng ý với Quy định sử dụng và Chính sách bảo mật của ĐHHHY</string>
+    <string name="rulePassword">**Mật khẩu phải có độ dài từ 8-32 kí tự, bao gồm tối thiểu 1 chữ hoa, 1 chữ thường, 1 ký tự số và 1 ký tự đặc biệt.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

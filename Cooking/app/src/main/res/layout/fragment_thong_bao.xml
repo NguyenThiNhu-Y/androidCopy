@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notify.NotifyFragment"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/lnThongbao">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:text="Thông báo"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:background="#E42A2A"
+        android:gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mới"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/thongbao"
+        android:layout_below="@+id/actionBar"
+        android:background="#DFDEDE"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:id="@+id/LauBo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/laubo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/LauBo"
+            android:text="Món lẩu bò bạn thích có 1 công thức mới"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trước đó"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/actionBar"
+        android:background="#DFDEDE"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/LauHaiSan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/lauhaisan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/LauHaiSan"
+            android:text="Món lẩu hải sản bạn thích có 1 công thức mới"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/actionBar"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/LauHaiSan2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/lauthai" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/LauHaiSan2"
+            android:text="Món lẩu thái bạn thích có 1 công thức mới"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</LinearLayout>

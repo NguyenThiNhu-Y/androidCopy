@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.favorite.FavoriteFragment"
+android:orientation="vertical"
+android:background="@color/white">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/tieude"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/red">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:textColor="@color/white"
+        android:text="Yêu thích"
+        android:textSize="25dp"/>
+
+    <ImageButton
+        android:id="@+id/imgBtSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_search"
+        android:background="#0000"
+        app:layout_constraintHorizontal_bias="1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="8">
+    <RelativeLayout
+        android:id="@+id/LauBo"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/actionBar"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivLauBo"
+            android:layout_width="115dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/laubo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto"
+            android:layout_toRightOf="@id/ivLauBo">
+
+            <TextView
+                android:id="@+id/vNameLauBo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Lẩu Bò"
+                android:textColor="@color/grey"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/vByUserLauBo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vNameLauBo"
+                android:fontFamily="@font/roboto"
+                android:text="Bởi User2"
+                android:textColor="@color/grey"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/vViewLauBo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vByUserLauBo"
+                android:text="Lượt xem: 80"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/grey"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/vLikeLauBo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vViewLauBo"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/grey"
+                android:text="Lượt thích: 14"
+                android:textSize="13dp" />
+        </RelativeLayout>
+        <CheckBox
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/checkbox_red" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/LauBo"
+        android:layout_marginTop="10dp"
+        android:background="#4D5A5A5A"
+        android:layout_marginHorizontal="10dp"/>
+    <RelativeLayout
+        android:id="@+id/LauHaiSan"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/LauBo"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivLauHaiSan"
+            android:layout_width="115dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/lauthai" />
+
+        <RelativeLayout
+            android:id="@+id/infoLauHaiSan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ivLauHaiSan">
+
+            <TextView
+                android:id="@+id/vNameLauHaiSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Lẩu Hải Sản"
+                android:textColor="@color/grey"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/vByUserLauHaiSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vNameLauHaiSan"
+                android:fontFamily="@font/roboto"
+                android:text="Bởi User2"
+                android:textColor="@color/grey"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/vViewLauHaiSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vByUserLauHaiSan"
+                android:fontFamily="@font/roboto"
+                android:text="Lượt xem: 80"
+                android:textColor="@color/grey"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/vLikeLauHaiSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vViewLauHaiSan"
+                android:fontFamily="@font/roboto"
+                android:text="Lượt thích: 14"
+                android:textColor="@color/grey"
+                android:textSize="13dp" />
+        </RelativeLayout>
+        <CheckBox
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/checkbox_red" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/LauHaiSan"
+        android:layout_marginTop="10dp"
+        android:background="#4D5A5A5A"
+        android:layout_marginHorizontal="10dp"/>
+</LinearLayout>
+
+
+</LinearLayout>

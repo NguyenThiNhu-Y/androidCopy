@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.Cooking.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_trang_chu" />
+
+    <fragment
+        android:id="@+id/navigation_yeuthich"
+        android:name="com.example.Cooking.ui.favorite.FavoriteFragment"
+        android:label="@string/title_yeu_thich"
+        tools:layout="@layout/fragment_yeu_thich" />
+
+    <fragment
+        android:id="@+id/navigation_thongbao"
+        android:name="com.example.Cooking.ui.notify.NotifyFragment"
+        android:label="@string/title_thong_bao"
+        tools:layout="@layout/fragment_thong_bao" />
+
+    <fragment
+        android:id="@+id/navigation_taikhoan"
+        android:name="com.example.Cooking.ui.account.AccountFragment"
+        android:label="@string/title_tai_khoan"
+        tools:layout="@layout/fragment_tai_khoan" />
+</navigation>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.home.HomeFragment"
+android:orientation="vertical"
+android:background="@color/white"
+android:weightSum="10"
+android:id="@+id/lnDanhMuc">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/tieude"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/red">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Công thức"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#0000"
+        android:src="@drawable/ic_baseline_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circle_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-30dp" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerlist"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_scroll" />
+
+            <View
+                android:id="@+id/scrollIn1"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_scroll_min" />
+
+            <View
+                android:id="@+id/scrollIn2"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_scroll_min"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Công thức từ cộng đồng"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:rowCount="3"-->
+<!--            android:columnCount="3">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/lauthai"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:clickable="true"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Lẩu thái"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                     <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/laubo"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Lẩu bò"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/lauchay"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Lẩu chay"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/chedauvan"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Chè đậu ván"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/sodacam"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Soda cam"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/comga"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Cơm gà"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/chatom"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Chả tôm"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/sodathanhlong"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Soda thanh long"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingLeft="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:src="@drawable/keomecay"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:text="Kẹo me cay"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:lines="2"/>-->
+
+<!--                    <CheckBox-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:button="@drawable/checkbox_15px" />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="bởi nhuy"-->
+<!--                    android:textSize="11dp"-->
+<!--                    android:textColor="#5A5A5A"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1 giờ"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--            </LinearLayout>-->
+
+
+
+<!--        </GridLayout>-->
+        <GridLayout
+            android:id="@+id/gridLayoutCongDong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"/>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

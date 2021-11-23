@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/red"
+    tools:context=".DangKy1Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="227dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/border_radius_left"
+            android:fontFamily="@font/ribeye"
+            android:gravity="center"
+            android:text="COOKING"
+            android:textColor="@color/red"
+            android:textSize="36dp" />
+
+        <ImageView
+            android:id="@+id/vIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_radius"
+            android:src="@drawable/chefhat" />
+
+        <RelativeLayout
+            android:id="@+id/vTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vIcon"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/vWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="XIN CHÀO"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vWelcome"
+                android:layout_marginTop="15dp"
+                android:text="Đăng ký để bắt đầu"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/txtUserPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vTitle"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/txtUserLogin"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_radius_5dp"
+                android:hint="@string/user"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/txtPasswordLogin"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtUserLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_radius_5dp"
+                android:hint="@string/pasword"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/txtRepeatPassword"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtPasswordLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_radius_5dp"
+                android:hint="@string/repeatPass"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey" />
+
+            <TextView
+                android:id="@+id/rulePass"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRepeatPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/rulePassword"
+                android:textColor="#B2FFFFFF" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rulePass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_20dp"
+                android:backgroundTint="@color/white"
+                android:shadowColor="@color/grey"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1.5"
+                android:text="TIẾP THEO"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUserPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:gravity="center">
+            <!--            android:layout_alignParentStart="true"-->
+            <!--            android:layout_alignParentEnd="true"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Đã có tài khoản?"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:stateListAnimator="@null"
+                android:text="Đăng nhập"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

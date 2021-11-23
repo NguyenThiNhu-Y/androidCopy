@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/lnTaiKhoan">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:text="Thông tin người dùng"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:background="@color/red"
+        android:gravity="center_vertical"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/aqw"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/editAnh"
+                android:gravity="center_vertical"
+                android:text="Đổi ảnh đại diện"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/editAnh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Tên đăng nhập"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="user111"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Họ tên"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/editTen"
+                android:text="Nguyễn Văn A"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/editTen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Ngày sinh "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vDoB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/editNgaySinh"
+                android:gravity="center_vertical"
+                android:text="01/01/2001"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/editNgaySinh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="12dp">
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Email "
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/vEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="user111@gmail.com"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Giới tính"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vGender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/editGioiTinh"
+                android:gravity="center_vertical"
+                android:text="Nam"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+            <ImageButton
+                android:id="@+id/editGioiTinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:backgroundTint="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Số điện thoại"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/editSDT"
+                android:gravity="center_vertical"
+                android:text="0123456789"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+            <ImageButton
+                android:id="@+id/editSDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:backgroundTint="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#335A5A5A"
+            android:layout_marginHorizontal="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="ĐẶT LẠI MẬT KHẨU"
+                android:background="@drawable/rounded_corner_20dp"
+                android:backgroundTint="@color/black"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:radius = "20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_20dp"
+                android:text="ĐĂNG XUẤT"
+                android:backgroundTint="#000000"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

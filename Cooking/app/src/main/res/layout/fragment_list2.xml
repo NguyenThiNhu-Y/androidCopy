@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    tools:context=".list2"
+    android:background="@color/white"
+    android:id="@+id/list2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/monchinh"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Món chính"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/monga"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Món gà"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/monbo"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Món bò"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/monheo"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Món heo"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/monchay"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Món chay"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/monnhat"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Món nhật"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/annhanh"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Ăn nhanh"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/lambanh"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#BAECF8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Làm bánh"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+
+
+
+    </GridLayout>
+
+</FrameLayout>
